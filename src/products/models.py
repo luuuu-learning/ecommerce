@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.signals import pre_save, post_save
 from django.urls import reverse
 
-from .utils import unique_slug_generator
+from ecommerce.utils import unique_slug_generator
 
 def get_filename_ext(filepath):
     base_name = os.path.basename(filepath)
@@ -92,7 +92,6 @@ def product_pre_save_receiver(sender, instance, *args, **kwargs):
         instance.slug = unique_slug_generator(instance)
 
 pre_save.connect(product_pre_save_receiver, sender=Product)
-
 
 
 
