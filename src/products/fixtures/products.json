@@ -1,0 +1,88 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "T-Shirt",
+        "slug": "t-shirt",
+        "description": "This is an awesome shirt. Buy it. :)",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-07-21T05:10:15.279Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "This is my hat",
+        "price": "39.99",
+        "image": "products/2969889474/2969889474.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-07-21T05:10:15.279Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "Supercomputer",
+        "slug": "supercomputer",
+        "description": "Yeahh",
+        "price": "3999999.99",
+        "image": "",
+        "featured": true,
+        "active": true,
+        "timestamp": "2021-07-21T05:10:15.279Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt-y7f6",
+        "description": "another one?>?",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-07-21T05:10:15.279Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt1",
+        "description": "ttttttt",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-07-22T17:01:24.192Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "title": "computer",
+        "slug": "super",
+        "description": "superrrrrrrr",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-07-22T17:01:43.737Z"
+    }
+}
+]
+
+
