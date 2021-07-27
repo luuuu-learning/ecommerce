@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^update/$', cart_update, name='update'),
 ]
 
+
 app_name = 'shop'
