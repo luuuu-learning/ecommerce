@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -20,9 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@!-)jwmuzh8btr380g61=g+#&zzei&dz2(&=xbvxztady)_p(r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -56,9 +56,9 @@ FORCE_INACTIVE_USER_ENDSESSION= False
 
 
 
-MAILCHIMP_API_KEY = "0a7bdae5b8a42830e029203f82edfe66-us6"
-MAILCHIMP_DATA_CENTER = "us6"
-MAILCHIMP_EMAIL_LIST_ID = "93ad2ca2ca"
+MAILCHIMP_API_KEY = "717d0854ed20fed3be3689a3f125915c-us17"
+MAILCHIMP_DATA_CENTER = "us17"
+MAILCHIMP_EMAIL_LIST_ID = "e2ef12efee"
 
 
 STRIPE_SECRET_KEY = "sk_test_cu1lQmcg1OLffhLvYrSCp5XE"
@@ -156,15 +156,19 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "static_root
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
 
+# https://kirr.co/vklau5
+
+# Let's Encrypt ssl/tls https
+
+CORS_REPLACE_HTTPS_REFERER      = True
+HOST_SCHEME                     = "https://"
+SECURE_PROXY_SSL_HEADER         = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT             = True
+SESSION_COOKIE_SECURE           = True
+CSRF_COOKIE_SECURE              = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS  = True
+SECURE_HSTS_SECONDS             = 1000000
+SECURE_FRAME_DENY               = True
 
 
 
-
-
-
-
-
-
-# MAILCHIMP_API_KEY = "0a7bdae5b8a42830e029203f82edfe66-us6"
-# MAILCHIMP_DATA_CENTER = "us6"
-# MAILCHIMP_EMAIL_LIST_ID = "93ad2ca2ca"
